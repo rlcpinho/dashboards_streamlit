@@ -17,11 +17,11 @@ def main():
             agrupado_por_cve = df.groupby('cve').size().reset_index(name='contagem')
 
             # Exibir o dashboard agrupado por "CVE"
-            st.write("## Dashboard Agrupado por CVEs")
-            st.write("Número de ocorrências de vulnerabilidade para cada CVE:")
+            st.write("## Dashboard Agrupado por CVE")
+            st.write("Número de ocorrências de vulnerabilidade para cada CVE: ")
             st.write(agrupado_por_cve)
         else:
-            st.error("Erro ao carregar o arquivo CSV.")
+            st.error("Erro ao carregar o arquivo CSV")
 
 if __name__ == "__main__":
     main()
