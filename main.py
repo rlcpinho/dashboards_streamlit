@@ -18,7 +18,7 @@ def main():
 
             # Exibir o dashboard agrupado por "CVE"
             st.write("## Dashboard Agrupado por CVE")
-            st.write("Número de ocorrências de vulnerabilidade para cada CVE: ")
+            st.write("Número de ocorrências de vulnerabilidade para cada CVE:")
             st.write(agrupado_por_cve)
         else:
             st.error("Erro ao carregar o arquivo CSV")
