@@ -17,7 +17,7 @@ def main():
             agrupado_por_cve = df.groupby('cve').size().reset_index(name='contagem')
 
             # Exibir o dashboard agrupado por "CVE"
-            st.write("## Dashboard Agrupado por CVE")
+            st.write("## Dashboard Agrupado por CVE's")
             st.write("Número de ocorrências de vulnerabilidade para cada CVE:")
             st.write(agrupado_por_cve)
         else:
